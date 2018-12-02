@@ -1,0 +1,23 @@
+{
+  "profiles": {
+    "Dev": {
+      //dotnet run --launch-profile Dev
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000"
+    },
+    "Prod": {
+      //dotnet run --launch-profile Prod
+      "commandName": "Project",
+      "launchBrowser": false,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      },
+      "applicationUrl": "http://localhost:8080"
+    }
+  }
+}
+
